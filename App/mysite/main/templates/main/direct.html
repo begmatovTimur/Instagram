@@ -1,0 +1,129 @@
+{% extends "main/base.html" %}
+
+{% block body %}
+
+{% if user.is_authenticated %}
+    <div class="container p-6">
+        <div class="main_box columns">
+            <div class="box_1 column has-background-black is-fullheight">
+                <p class="title has-text-white is-size-5 has-text-centered">
+                    {{ request.user }} <svg aria-label="Новое сообщение" class="_8-yf5 ml-6" color="#fafafa" fill="#fafafa" height="24" role="img" viewBox="0 0 24 24" width="24"><path d="M12.202 3.203H5.25a3 3 0 00-3 3V18.75a3 3 0 003 3h12.547a3 3 0 003-3v-6.952" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><path d="M10.002 17.226H6.774v-3.228L18.607 2.165a1.417 1.417 0 012.004 0l1.224 1.225a1.417 1.417 0 010 2.004z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="16.848" x2="20.076" y1="3.924" y2="7.153"></line></svg>
+                </p> 
+
+                <hr class="has-background-dark is-fullweight">
+
+                <div class="columns">
+                    <div class="column">
+                        <div class="columns mt-2">
+                            <div class="column">
+                                <div class="columns">
+                                    <div class="column">
+                                        <figure class="image is-64x64">
+                                            <img class="is-rounded" src="https://bulma.io/images/placeholders/64x64.png">
+                                        </figure>
+                                    </div>
+            
+                                    <div class="column">
+                                        <figure class="box_image image is-3by1">
+                                            <img class="is-rounded" src="https://bulma.io/images/placeholders/256x256.png">
+                                        </figure>
+                                    </div>
+            
+                                    <div class="column">
+                                        <figure class="image is-3by1">
+                                            <img class="is-rounded" src="https://bulma.io/images/placeholders/256x256.png">
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="column">
+            
+                            </div>
+                        </div>
+
+                       <div class="columns mt-2">
+                           <div class="column">
+                               <div class="columns">
+                                   <div class="column">
+                                       <figure class="image is-64x64">
+                                           <img class="is-rounded" src="https://bulma.io/images/placeholders/64x64.png">
+                                        </figure>
+                                    </div>
+
+                                    <div class="column">
+                                        <figure class="image is-3by1">
+                                            <img class="is-rounded" src="https://bulma.io/images/placeholders/256x256.png">
+                                        </figure>
+                                    </div>
+
+                                    <div class="column">
+                                        <figure class="image is-3by1">
+                                            <img class="is-rounded" src="https://bulma.io/images/placeholders/256x256.png">
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+
+                    <div class="column">
+
+                    </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="columns mt-2">
+                    <div class="column">
+                        <div class="columns">
+                            <div class="column">
+                                <figure class="image is-64x64">
+                                    <img class="is-rounded" src="https://bulma.io/images/placeholders/64x64.png">
+                                </figure>
+                            </div>
+
+                            <div class="column">
+                                <figure class="image is-3by1">
+                                    <img class="is-rounded" src="https://bulma.io/images/placeholders/256x256.png">
+                                </figure>
+                            </div>
+
+                            <div class="column">
+                                <figure class="image is-3by1">
+                                    <img class="is-rounded" src="https://bulma.io/images/placeholders/256x256.png">
+                                </figure>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="column">
+
+                    </div>
+                </div>
+
+                <br><br><br><br><br><br>
+            </div>
+
+        
+            <div class="box_2 column has-background-black ml-1 mt-2">
+                <p class="has-text-centered mt-6">
+                    <svg aria-label="Direct" class="_8-yf5 " color="#fafafa" fill="#fafafa" height="96" role="img" viewBox="0 0 96 96" width="96"><circle cx="48" cy="48" fill="none" r="47" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></circle><line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" x1="69.286" x2="41.447" y1="33.21" y2="48.804"></line><polygon fill="none" points="47.254 73.123 71.376 31.998 24.546 32.002 41.448 48.805 47.254 73.123" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></polygon></svg>
+                </p>
+
+                <p class="has-text-centered has-text-white is-size-4">
+                    Ваши сообщение
+                </p>
+
+                <p class="has-text-centered has-text-light-grey is-size-6">Отправляйте личные фото и сообщения другу или группе.</p>
+
+                <p class="has-text-centered mt-5">
+                    <button class="button is-info is-size-7">
+                        Отправить сообщение
+                    </button>
+                </p>
+            </div>
+        </div>
+    </div>
+{% endif %}
+
+{% endblock %}

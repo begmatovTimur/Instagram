@@ -1,0 +1,29 @@
+{% extends "main/base.html" %}
+
+
+{% block body %}
+
+{% if user.is_authenticated %}
+    <div class="container m-6">
+        <form action="" method="POST">
+            {% csrf_token %}
+            
+            {{ form.author }}
+
+            <br>
+
+            {{ form.text }}
+
+
+            <br>
+
+            {{ form.post }}
+
+            <p class="has-text-centered mt-6">
+                <button type="submit" class="button is-outlined is-rounded is-info">Добавить комментарии</button>
+            </p>
+        </form>
+    </div>
+{% endif %}
+
+{% endblock %}

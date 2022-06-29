@@ -1,0 +1,63 @@
+{% extends "main/base.html" %}
+
+{% block body %}
+
+<div class="first_main_box has-background-black-bis">
+    <p class="has-text-white ml-5">На этой неделе</p>
+    
+    <div class="second_main_box mt-3">
+        <div class="first">
+            <figure class="image is-48x48">
+                <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
+            </figure>
+        </div>
+
+        <div class="second ml-4">{{ request.user }}</div>
+
+        <div class="third">подписался(-ась) на ваши обновления.</div>
+
+        <div class="forth ml-6">
+            <button class="button has-background-black is-small">
+                <p class="has-text-white">Подписки</p>
+            </button>
+        </div>
+    </div>
+
+    <div class="second_main_box mt-6">
+        <div class="first">
+            <figure class="image is-48x48">
+                <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
+            </figure>
+        </div>
+
+        <div class="second ml-4">{{ request.user }}</div>
+
+        <div class="third">подписался(-ась) на ваши обновления.</div>
+
+        <div class="forth ml-6">
+            <button class="button has-background-black is-small">
+                <p class="has-text-white">Подписки</p>
+            </button>
+        </div>
+    </div>
+
+    <div class="second_main_box mt-6">
+        <div class="first">
+            <figure class="image is-48x48">
+                <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
+            </figure>
+        </div>
+
+        <div class="second ml-4">{{ request.user }}</div>
+
+        <div class="third">подписался(-ась) на ваши обновления.</div>
+
+        <div class="forth ml-6">
+            <button class="button has-background-black is-small">
+                <p class="has-text-white">Подписки</p>
+            </button>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

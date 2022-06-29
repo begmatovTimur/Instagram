@@ -1,0 +1,83 @@
+{% extends "main/base.html" %}
+
+{% block body %}
+{% if user.is_authenticated %}
+  <section class="hero is-fullheight">
+      <div class="hero-body">
+        <figure class="image is-128x128">
+          <img class="is-rounded" src="https://football-fun.ru/uploads/37/posts/0-02-05-cc264c1ff1bf0d586ef516c4584169c0a47553473a3d5c84761d1b22d80b2620-2b911969.jpg">
+        </figure>
+          <div class="content">
+             <p class="is-size-4 ml-6 has-text-white">{{ request.user }}
+               <a href="{% url 'direct' %}">
+                 <button class="button ml-2 has-background-black ml-6">
+                     <a href="{% url 'direct' %}">
+                       <p class="has-text-white">Отправить сообщение</p>
+                     </a>
+                 </button>
+               </a>
+
+               <button class="button has-background-info ml-6">
+                 <p class="has-text-white">Подписатся</p>
+               </button>
+             </p>
+
+             <nav class="level is-mobile ml-6">
+              <div class="level-item has-text-centered">
+                <div>
+                  <p class="heading is-size-7 has-text-white">публикаций</p>
+                  <p class="is-size-5 has-text-white">831</p>
+                </div>
+              </div>
+              <div class="level-item has-text-centered">
+                <div>
+                  <p class="heading is-size-7 has-text-white">подписчиков</p>
+                  <p class="is-size-5 has-text-white">307млн</p>
+                </div>
+              </div>
+              <div class="level-item has-text-centered">
+                <div>
+                  <p class="heading is-size-7 has-text-white">подписок</p>
+                  <p class="is-size-5 has-text-white">284</p>
+                </div>  
+              </div>
+            </nav>
+            
+            <div class="m-6">
+              <h1 class="title has-text-white">
+                {{request.user}}
+              </h1>
+
+              <p class="is-size-6 has-text-white">
+                Bienvenidos a la cuenta oficial de Instagram de Leo Messi / Welcome <br> to the official Leo Messi Instagram account
+              </p>
+
+              <button class="button has-background-danger">
+                <a href="{% url 'log_out' %}">
+                  <p class="has-text-white">Выйти из аккаунта</p>
+                </a>
+              </button>
+
+              <button class="button has-background-info">
+                <a href="{% url 'log_in' %}">
+                  <p class="has-text-white">Зайти через другой аккаунт</p>
+                </a>
+              </button>
+
+            </div>
+          </div>
+      </div>
+    
+      <div class="hero-body">
+        <div class="columns is-outlined">
+            <div class="column"><img src="https://imgresizer.eurosport.com/unsafe/1200x0/filters:format(jpeg):focal(1331x357:1333x355)/origin-imgresizer.eurosport.com/2021/05/22/3137560-64306928-2560-1440.jpg" width="400px" alt=""></div>
+
+            <div class="column"><img src="https://ss.sport-express.ru/userfiles/materials/118/1180884/volga.jpg" width="400px" alt=""></div>
+
+            <div class="column"><img src="https://soccernews.ru/images/foto/20190719/153831_m.jpg" width="400px" alt=""></div>
+        </div>
+      </div>
+  </section>  
+{% endif %}
+
+{% endblock %}

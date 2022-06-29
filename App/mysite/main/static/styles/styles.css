@@ -1,0 +1,62 @@
+.post_box {
+    display: flex;
+    justify-content: center;
+
+}
+
+.post {
+    width: 40%;
+    height: 10%;
+}
+
+.box_1 {
+    width: 50%;
+}
+
+.box_2 {
+    width: 50%;
+}
+
+.main_box {
+    display: flex;
+}
+
+.first_main_box {
+    width: 50%;
+    justify-content: center;
+}
+
+.second_main_box {
+    display: flex;
+    margin-left: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .post {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .post {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main_box {
+        display: block;
+    }
+
+    .box_1 {
+        width: 100%;
+    }
+
+    .box_2 {
+        width: 100%;
+    }
+
+    .box_image {
+        display: block;
+    }
+}
